@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffd1dc</color>
+    <color name="colorPrimaryDark">#d797a7</color>
+    <color name="colorAccent">#d1dcff</color>
+
+    <color name="salmon">#ffddd1</color>
+    <color name="jungleGreen">#24988D</color>
+    <color name="surfieGreen">#128176</color>
+    <color name="porcelain">#ECEFF0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="alto">#DADADA</color>
+    <color name="monteCarlo">#78CCC5</color>
+    <color name="blackAlpha25p">#40000000</color>
+    <color name="tundora">#4A4A4A</color>
+    <color name="amethyst">#BE4DCA</color>
+    <color name="boulder">#7B7B7B</color>
+
+    <color name="colorButtonTextEnabled">@color/white</color>
+    <color name="colorButtonTextDisabled">@color/blackAlpha25p</color>
+
+    <color name="colorButtonBackground">@color/salmon</color>
+    <color name="colorButtonBackgroundDisabled">@color/porcelain</color>
+    <color name="colorButtonBackgroundPressed">@color/colorPrimaryDark</color>
+
+    <!-- Cookie Activity -->
+    <color name="colorCookieActivityBackground">@color/monteCarlo</color>
+    <color name="colorCookieActivityTextColor">@color/white</color>
+
+    <!-- Order Sheet -->
+    <color name="colorGooglePayButtonBackground">@color/black</color>
+    <color name="colorSheetOverlay">@color/tundora</color>
+    <color name="colorSheetBackground">@color/white</color>
+    <color name="colorSheetSeparator">@color/alto</color>
+    <color name="colorSheetLabel">@color/colorPrimary</color>
+    <color name="colorSheetInfo">@color/boulder</color>
+    <color name="colorSheetValue">@color/black</color>
+
+
+    <!-- Card Entry -->
+    <color name="colorCardEntryBackground">@color/white</color>
+
+    <color name="ic_launcher_background">@color/amethyst</color>
+</resources>

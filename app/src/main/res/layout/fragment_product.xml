@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/productpage_dec_btn"
+                android:layout_width="128dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/product_dec"
+                app:layout_constraintBottom_toTopOf="@+id/addToCart_btn"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/productpage_inc_btn"
+                android:layout_width="128dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/product_inc"
+                app:layout_constraintBottom_toTopOf="@+id/addToCart_btn"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/addToCart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:onClick="addToCart"
+                android:padding="8dip"
+                android:text="@string/Add_cart"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/productpage_img"
+                android:layout_width="403dp"
+                android:layout_height="212dp"
+                app:layout_constraintBottom_toTopOf="@+id/productpage_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/productpage_description"
+                android:layout_width="400dp"
+                android:layout_height="293dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/productpage_inc_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productpage_price" />
+
+            <TextView
+                android:id="@+id/productpage_price"
+                android:layout_width="200dp"
+                android:layout_height="78dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textAlignment="viewEnd"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/productpage_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productpage_name"
+                app:layout_constraintTop_toBottomOf="@+id/productpage_img" />
+
+            <TextView
+                android:id="@+id/productpage_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="46dp"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/addToCart_btn"
+                app:layout_constraintEnd_toStartOf="@+id/productpage_inc_btn"
+                app:layout_constraintStart_toEndOf="@+id/productpage_dec_btn" />
+
+            <TextView
+                android:id="@+id/productpage_name"
+                android:layout_width="196dp"
+                android:layout_height="79dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="36sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/productpage_description"
+                app:layout_constraintEnd_toStartOf="@+id/productpage_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productpage_img" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="128dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="197dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

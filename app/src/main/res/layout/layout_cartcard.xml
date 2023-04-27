@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/cart_card_product_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/cart_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="147dp"
+        android:layout_marginStart="147dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="8dp"
+        android:text="TextView"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/cart_product_price"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="387dp"
+        android:layout_marginStart="387dp"
+        android:fontFamily="sans-serif-light"
+        android:padding="8dp"
+        android:text="TextView"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/cart_product_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:onClick="delItem"
+        android:text="@string/del_item" />
+
+    <Button
+        android:id="@+id/cart_inc_btn"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/cart_product_name"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/cart_card_product_img"
+        android:text="@string/product_inc" />
+
+    <Button
+        android:id="@+id/cart_dec_btn"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/cart_product_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@+id/cart_card_product_img"
+        android:text="@string/product_dec" />
+    <TextView
+        android:id="@+id/cart_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_product_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/cart_dec_btn"
+        android:text="@string/product_def_qty"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ClothingAppFramework</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ClothingAppFramework</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_product">Product</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_checkout">Checkout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- For fragment_cart -->
+    <string name="total_amount">Total Price =</string>
+    <string name="checkout">Go To Checkout</string>
+    <string name="cart_frag">My Cart</string>
+    <string name="Add_cart">Add to Cart</string>
+    <string name="del_item">delete item</string>
+
+    <!-- for fragment_cart-->
+    <string name="product_inc">+</string>
+    <string name="product_dec">-</string>
+    <string name="product_def_qty">0</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="pay_now">PAY NOW</string>
+
+    <string name="address">124 Fake Street  Winnipeg, MB, R2C2H2</string>
+    <string name="buy_button">Buy</string>
+    <string name="description">Instantly gain special powers when ordering a super cookie</string>
+    <string name="square_name">Darcy Lawrence</string>
+    <string name="merchant_id_not_set_message"><![CDATA[To request a Google Pay nonce, replace <b>ConfigHelper.GOOGLE_PAY_MERCHANT_ID</b> with your Google Pay Merchant ID.]]></string>
+    <string name="merchant_id_not_set_title">Missing Google Pay Merchant ID</string>
+    <string name="missing_application_id_message"><![CDATA[Please update <b>sqip.SQUARE_APPLICATION_ID</b> in <b>AndroidManifest.xml</b> if you want to be able to create a nonce.]]></string>
+    <string name="missing_application_id_title">Missing Square Application ID</string>
+    <string name="network_failure_title">Network Error</string>
+    <string name="network_failure">There was an error processing the payment, please check your network connection.</string>
+    <string name="pay_button">Pay 🍪</string>
+    <string name="pay_with_card">Pay with Card</string>
+    <string name="place_your_order">Place your order</string>
+    <string name="price">$75.00</string>
+    <string name="retry">Retry</string>
+    <string name="server_host_not_set_message"><![CDATA[Check logcat <b>Info</b> messages for a CURL command to charge the nonce, or replace <b>ConfigHelper.CHARGE_SERVER_HOST</b> with your server host.]]></string>
+    <string name="server_host_not_set_title">Nonce generated but not charged</string>
+    <string name="ship_to">Ship to</string>
+    <string name="successful_order_message">Go to your Square dashboard to see this order reflected in the sales tab.</string>
+    <string name="successful_order_title">Your order was successful</string>
+    <string name="super_cookie">Super Cookie</string>
+    <string name="total">Total</string>
+    <string name="unsuccessful_order">Your order was not successful</string>
+</resources>

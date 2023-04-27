@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="clothingapp.presentation.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_shop"
+            app:destination="@id/nav_shop" />
+        <action
+            android:id="@+id/action_nav_home_to_cartFragment"
+            app:destination="@id/nav_cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="clothingapp.presentation.shop.ShopFragment"
+        android:label="@string/menu_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_nav_shop_to_nav_product"
+            app:destination="@id/nav_product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="clothingapp.presentation.shop.ProductFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_product" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="clothingapp.presentation.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_nav_cart_to_nav_checkout"
+            app:destination="@id/nav_checkout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="clothingapp.presentation.checkout.CheckoutFragment"
+        android:label="@string/menu_checkout"
+        tools:layout="@layout/fragment_checkout"/>
+
+</navigation>
