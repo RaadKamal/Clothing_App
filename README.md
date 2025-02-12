@@ -12,7 +12,6 @@
 
 ---
 
-The mobile clothing app framework is a template for clients to easily set up an online clothing shop. The framework will provide a general layout along with some useful features which will create a fully functional shop once the client enters their shop’s inventory.
 
 Our stakeholders are small business owners and event planners, which may lack adequate resources to develop their own specialized app, but could afford a template license. The framework's significant features provided include sorting items, item reviews, payment systems, and account creation. 
 
